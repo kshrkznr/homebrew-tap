@@ -5,7 +5,6 @@ class Ctk < Formula
   desc "Compose and reproduce VS Code-family environments"
   homepage "https://github.com/kshrkznr/code-toolkit"
   url "https://github.com/kshrkznr/code-toolkit/releases/download/v0.5.2/ctk_v0.5.2_darwin_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.tar.gz"
-  version "0.5.2"
   sha256 Hardware::CPU.arm? ? ARM64_SHA256 : AMD64_SHA256
   license "MIT"
 
