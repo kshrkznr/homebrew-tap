@@ -1,10 +1,10 @@
 class Ctk < Formula
-  ARM64_SHA256 = "a6ff591094cbe26aeb298be40840a243bcdcd80d5ea61ec756d1aa11f5a161bb".freeze
-  AMD64_SHA256 = "40e8bc4d39fdcdc87ec020b2a4bd071587779fa9f6664bb6481ac824cd3b4d7a".freeze
+  ARM64_SHA256 = "48871c0b0f160ed7e6bdfad46488d09c19cd2acb8eb3badd2a9fa57a0a5e0b53".freeze
+  AMD64_SHA256 = "31ed65ce81c6fafec2001f2b7b079d1ef0cfae9f5c73626ab46465a8710b807b".freeze
 
   desc "Compose and reproduce VS Code-family environments"
   homepage "https://github.com/kshrkznr/code-toolkit"
-  url "https://github.com/kshrkznr/code-toolkit/releases/download/v0.7.0/ctk_v0.7.0_darwin_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.tar.gz"
+  url "https://github.com/kshrkznr/code-toolkit/releases/download/v0.7.1/ctk_v0.7.1_darwin_#{Hardware::CPU.arm? ? "arm64" : "amd64"}.tar.gz"
   sha256 Hardware::CPU.arm? ? ARM64_SHA256 : AMD64_SHA256
   license "MIT"
 
